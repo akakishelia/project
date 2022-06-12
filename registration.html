@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Registration</title>
+  </head>
+  <body style="background: #fff7f3">
+    <header class="header">
+      <nav class="navbar">
+        <h1 class="logo"><a href="index.html">Tickets</a></h1>
+
+        <ul>
+          <li>
+            <a href="index.html"
+              ><i class="fa fa-home" aria-hidden="true"></i> Home</a
+            >
+          </li>
+          <li>
+            <a href="railway.html"
+              ><i class="fa fa-road" aria-hidden="true"></i> Railway</a
+            >
+          </li>
+          <li>
+            <a href="formula1.html"
+              ><i class="fa fa-car" aria-hidden="true"></i> Formula1</a
+            >
+          </li>
+          <li>
+            <a href="contact.html"
+              ><i class="fa fa-phone-square" aria-hidden="true"></i> Contact</a
+            >
+          </li>
+          <li>
+            <a href="info.html"
+              ><i class="fa fa-history" aria-hidden="true"></i> Info</a
+            >
+          </li>
+          <li>
+            <a href="authorization.html"
+              ><i class="fa fa-sign-in" aria-hidden="true"></i> Authorization</a
+            >
+          </li>
+          <li>
+            <a href="registration.html"
+              ><i class="fa fa-registered" aria-hidden="true"></i>
+              Registration</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <h1 style="text-align: center">Registration</h1>
+
+      <div
+        id="error"
+        style="
+          margin: auto;
+          text-align: center;
+          padding: 5px;
+          width: 40%;
+          background-color: rgb(207, 110, 110);
+          border: 1px solid red;
+          border-radius: 100px;
+          color: white;
+          height: 40px;
+          display: none;
+        "
+      ></div>
+
+      <div
+        id="weakpassword"
+        style="
+          margin: auto;
+          text-align: center;
+          padding: 5px;
+          width: 40%;
+          background-color: rgb(207, 110, 110);
+          border: 1px solid red;
+          border-radius: 100px;
+          color: white;
+          height: 40px;
+          display: none;
+
+          margin-top: 6px;
+        "
+      ></div>
+
+      <div
+        id="normalpassword"
+        style="
+          margin: auto;
+          text-align: center;
+          padding: 5px;
+          width: 40%;
+          background-color: rgb(214, 241, 89);
+          border: 1px solid rgb(157, 235, 12);
+          border-radius: 100px;
+          color: white;
+          height: 40px;
+          display: none;
+
+          margin-top: 6px;
+        "
+      ></div>
+
+      <div
+        id="goodpassword"
+        style="
+          margin: auto;
+          text-align: center;
+          padding: 5px;
+          width: 40%;
+          background-color: rgb(23, 202, 47);
+          border: 1px solid rgb(3, 155, 41);
+          border-radius: 100px;
+          color: white;
+          height: 40px;
+          display: none;
+
+          margin-top: 6px;
+        "
+      ></div>
+
+      <div
+        id="greatpassword"
+        style="
+          margin: auto;
+          text-align: center;
+          padding: 5px;
+          width: 40%;
+          background-color: rgb(0, 102, 31);
+          border: 1px solid rgb(2, 53, 22);
+          border-radius: 100px;
+          color: white;
+          height: 40px;
+          display: none;
+          margin-top: 6px;
+        "
+      ></div>
+
+      <div
+        id="info"
+        style="
+          margin: auto;
+          text-align: center;
+          padding: 5px;
+          width: 40%;
+          background-color: rgb(45, 73, 199);
+          border: 1px solid rgb(6, 4, 150);
+          border-radius: 100px;
+          color: white;
+          height: 40px;
+          display: none;
+          margin-top: 6px;
+        "
+      ></div>
+
+      <div class="formcontainer">
+        <div>
+          <label
+            ><i
+              class="fa fa-envelope"
+              style="font-size: 20px; color: lightslategray"
+            ></i>
+            Email</label
+          >
+          <input id="email" type="email" placeholder="Email" value="" />
+
+          <label
+            ><i
+              class="fa fa-unlock-alt"
+              style="font-size: 20px; color: lightslategray"
+            ></i>
+            Password</label
+          >
+          <input
+            id="password"
+            type="password"
+            value=""
+            placeholder="Password"
+            class="password"
+          />
+
+          <label
+            ><i
+              class="fa fa-unlock-alt"
+              style="font-size: 20px; color: lightslategray"
+            ></i>
+            Confirm Password</label
+          >
+          <input
+            id="confirmPassword"
+            type="password"
+            placeholder="Confirm Password"
+          />
+
+          <label
+            ><i
+              class="fa fa-user-circle"
+              style="font-size: 20px; color: lightslategray"
+            ></i>
+            Username</label
+          >
+          <input type="text" placeholder="Username" />
+
+          <label
+            ><i
+              class="fa fa-globe"
+              style="font-size: 20px; color: lightslategray"
+            ></i>
+            Country</label
+          >
+          <input type="text" placeholder="Country" />
+
+          <label
+            ><i
+              class="fa fa-map-marker"
+              style="font-size: 20px; color: lightslategray"
+            ></i>
+            City</label
+          >
+          <input type="text" placeholder="City" />
+
+          <label
+            ><i
+              class="fa fa-phone-square"
+              style="font-size: 20px; color: lightslategray"
+            ></i>
+            Phone Number</label
+          >
+          <input type="text" placeholder="Phone Number" />
+          <button
+            onclick="myFunction()"
+            style="width: 100%; height: 40px; margin-top: 4px"
+          >
+            <p style="margin: auto; font-size: 18px">Register</p>
+          </button>
+        </div>
+      </div>
+    </header>
+    <footer>
+      <p style="margin: auto">&copy; Copyright 2022 Akaki Shelia</p>
+    </footer>
+    <script>
+      function myFunction() {
+        let password = document.getElementById('password').value
+        var confirmPassword = document.getElementById('confirmPassword').value
+        var error = document.getElementById('error')
+        var email = document.getElementById('email').value
+        var weakpassword = document.getElementById('weakpassword')
+        var normalpassword = document.getElementById('normalpassword')
+        var goodpassword = document.getElementById('goodpassword')
+        var greatpassword = document.getElementById('greatpassword')
+        var info = document.getElementById('info')
+        var smallLetters = 'abcdefghijklmnopqrstuvwxyz'
+        var bigLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        var numbers = '0123456789'
+        var characters = '!@#$%^&*'
+
+        if (email.includes('@')) {
+          if (email.split('@')[1].includes('.')) {
+            let emailaddress = email.split('@')[1]
+            if (emailaddress.split('.')[1].length >= 2) {
+            } else {
+              error.style.display = 'block'
+              error.innerText = 'Write At least 2 Characters after symbol . '
+            }
+          } else {
+            error.style.display = 'block'
+            document.getElementById('email').style.border = '1px solid red'
+            error.innerText = 'Email Doesnot Contain symbol . '
+          }
+        } else {
+          error.style.display = 'block'
+          document.getElementById('email').style.border = '1px solid red'
+          error.innerText = 'Email Doesnot Contain symbol @'
+        }
+
+        if (password !== confirmPassword) {
+          error.style.display = 'block'
+          document.getElementById('password').style.border = '1px solid red'
+          document.getElementById('confirmPassword').style.border =
+            '1px solid red'
+          error.innerText = 'Passwords Do not Match'
+        }
+
+        info.style.display = 'block'
+        currentDate = String(new Date())
+
+        info.innerHTML = 'Registered on ' + currentDate.substring(0, 25)
+
+        for (let smallLetter of smallLetters) {
+          for (let bigLetter of bigLetters) {
+            for (let number of numbers) {
+              for (let character in characters) {
+                if (password.includes(smallLetter)) {
+                  weakpassword.style.display = 'block'
+                  document.getElementById('password').style.border =
+                    '1px solid red'
+                  document.getElementById('confirmPassword').style.border =
+                    '1px solid red'
+
+                  weakpassword.innerText = 'Weak Password'
+                } else if (password.includes(bigLetter)) {
+                  weakpassword.style.display = 'none'
+                  document.getElementById('password').style.border =
+                    '1px solid rgb(214, 241, 89)'
+                  document.getElementById('confirmPassword').style.border =
+                    '1px solid rgb(214, 241, 89)'
+                  normalpassword.style.display = 'block'
+
+                  normalpassword.innerText = 'Normal Password'
+                } else if (password.includes(number)) {
+                  weakpassword.style.display = 'none'
+                  normalpassword.style.display = 'none'
+                  document.getElementById('password').style.border =
+                    '1px solid rgb(23, 202, 47)'
+                  document.getElementById('confirmPassword').style.border =
+                    '1px solid rgb(23, 202, 47)'
+                  goodpassword.style.display = 'block'
+
+                  goodpassword.innerText = 'Good Password'
+                } else if (password.includes(character)) {
+                  weakpassword.style.display = 'none'
+                  normalpassword.style.display = 'none'
+                  goodpassword.style.display = 'none'
+                  document.getElementById('password').style.border =
+                    '1px solid rgb(0, 102, 31)'
+                  document.getElementById('confirmPassword').style.border =
+                    '1px solid rgb(0, 102, 31)'
+                  greatpassword.style.display = 'block'
+
+                  greatpassword.innerText = 'Great Password'
+                }
+              }
+            }
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
